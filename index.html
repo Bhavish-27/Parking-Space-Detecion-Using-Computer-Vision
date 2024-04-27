@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park At Ease - Parking Space Detection</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script>
+        function showVideo(slotNumber) {
+            // Show the video container 
+            
+            // Set the source of the video based on the selected slot
+            var videoSrc = '';
+            if (slotNumber === 'Slot 1') {
+                window.location.href = 'video.html';// Replace with the actual video file path for Slot 1
+            } else if (slotNumber === 'Slot 2') {
+                window.location.href = 'video.html'; // Replace with the actual video file path for Slot 2
+            } else if (slotNumber === 'Slot 3') {
+                window.location.href = 'video.html'; // Replace with the actual video file path for Slot 3
+            }
+            
+            // Update the video source
+            
+        }
+    </script>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://pngimg.com/uploads/parking/parking_PNG81.png" alt="Park At Ease Logo">
+            <h1>Park At Ease</h1>
+            <nav class="navbar">
+                <a href="#home" id="homeLink">Home</a>  
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="loc.html">Location</a>
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="credentials-container" id="signupForm" style="display:none;">
+            <h2>Sign Up Credentials</h2>
+            <form onsubmit="return validateSignUp()">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <div class="buttons-container">
+                    <button type="submit">Submit</button>
+                    <a href="#" onclick="toggleForm('loginForm')">Back to Login</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div class="credentials-container" id="loginForm">
+            <h2>Login Credentials</h2>
+            <form>
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password1" name="password" required>
+
+                <button type="submit" >Login</button>
+                <button type="submit" id="resetButton">Reset</button>
+            </form>
+            
+            <p>
+                <a href="#" onclick="toggleForm('signupForm')">Sign Up</a>
+               
+            </p>
+        </div>
+        <h1 id="free-spaces-header" style="display: none;">Free Parking Spaces Count:</h1>
+        <div id="free-spaces-count" style="display: none;">Loading...</div>
+        <!-- Slots Container -->
+        <div class="slots-container">
+                <div class="credentials-container slot-container">
+                    <h2>Slot 1</h2>
+                    <button type="button" onclick="showVideo('Slot 1')" >Select Slot 1</button>
+                </div>
+                <div class="credentials-container slot-container">
+                    <h2>Slot 2</h2>
+                    <button type="button" onclick="showVideo('Slot 2')">Select Slot 2</button>
+                </div>
+                <div class="credentials-container slot-container">
+                    <h2>Slot 3</h2>
+                    <button type="button" onclick="showVideo('Slot 3')">Select Slot 3</button>
+                </div>
+        </div>
+        <div id="video-container" style="display: none;"  >
+            <video id="video_player" controls>
+                <source src="output.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="controls">
+                <button class="control-button" onclick="playPause()">Play/Pause</button>
+                <button class="control-button" onclick="muteUnmute()">Mute/Unmute</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="first.js"></script>
+        <script src="data.js"></script>
+       
+    
+   
+    
+</body>
+</html>

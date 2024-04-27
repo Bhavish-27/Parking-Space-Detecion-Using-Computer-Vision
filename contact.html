@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+    max-width: 1000px; /* Increase the maximum width */
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the sides to keep content away from the edges */
+    height: 580px;
+}
+
+    .contact-info-container {
+    max-width: 90%; /* Set a maximum width for the container */
+    width: 400px; /* Optionally set a specific width for larger screens */
+    margin: 20px auto; /* Center the container horizontally with some margin */
+    padding: 20px 30px; /* Add padding to the container */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    background-color: rgba(47, 60, 126, 0.7); /* Transparent dark blue background */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center text */
+}
+
+.contact-info-container h2 {
+    margin-bottom: 20px; /* Add margin below the heading */
+    color: #ffffff; /* White text color */
+}
+
+.contact-info {
+    margin-bottom: 15px; /* Add margin below each contact information */
+}
+
+.contact-info p {
+    margin: 0; /* Reset margin */
+    font-size: 16px; /* Set font size */
+}
+
+.contact-info a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.contact-info {
+    text-align: left; /* Align the text to the left */
+}
+
+.contact-info p {
+    margin: 10px 0; /* Add margin to separate each paragraph */
+    font-size: 18px; /* Set font size */
+    color: #ffffff; /* Set text color */
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 50px;
+}
+
+input[type="submit"] {
+    background-color: #2F3C7E;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1E2656;
+}
+.container2{
+    color: white;
+}
+.contact-form input[type="submit"] {
+    background-color: #2F3C7E; /* Background color of the button */
+    color: #ffffff; /* Text color of the button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Font size of the text */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #1e2652; /* Darker background color on hover */
+}
+
+
+        </style>
+</head>
+<body>
+   
+
+    <section id="contact" class="contact-info-container">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Email: bhavishreddy23@gmail.com</p>
+                <p>Phone: 9032031834</p>
+                <p>Address: Chruch Street, Bangalore, India</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="https://formspree.io/f/xzbnyqjk" method="POST" class="contact-form">
+               
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container2">
+            <p > &copy; 2024 Part At Ease. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

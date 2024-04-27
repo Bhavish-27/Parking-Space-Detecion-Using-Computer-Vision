@@ -1,0 +1,254 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('https://wallpaperaccess.com/full/4327427.jpg'); /* Replace with the path or URL to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent; /* Set background color to transparent or your desired color */
+    overflow-x: hidden; /* Optionally, hide horizontal scrollbar if needed */
+    height: 100%; /* Ensure body takes up full height */
+    opacity: 0.7;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: transparent; /* Transparent background for the login container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* White text color for the login container */
+}
+.logo-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; /* Add margin to the right side */
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Push items to the right end */
+}   
+
+.navbar a {
+    text-decoration: none;
+    color: #2F3C7E; /* Dark blue color */
+    margin-left: 20px; /* Add margin to the left */
+    margin-right: 0; /* Remove margin from the right */
+    text-transform: uppercase; /* Uppercase text */
+    font-family: 'Sofia Pro', sans-serif; /* Use the same font as the website name */
+    font-weight: bold; /* Make the text bold */
+}
+
+.logo-container {
+    /* Your logo container styles go here */
+    display: flex;
+    align-items: center;
+    background-color: rgba(251, 234, 235, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px; /* Add margin around the logo container */
+}
+
+.logo-container img {
+    width: 50px; /* Adjust the size of the logo as needed */
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    font-family: 'Sofia Pro', sans-serif; /* Use Brush Script font */
+    color: #2F3C7E; /* Dark blue text color for the website name */
+    margin: 0;
+}
+
+
+.credentials-container {
+    max-width: 90%; /* Set a maximum width to ensure responsiveness */
+    width: 400px; /* Optionally set a specific width for larger screens */
+    margin-top: 20px;
+    padding: 20px 30px; /* Added padding to the right and left edges */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(47, 60, 126, 0.7); /* Transparent dark blue background for the login credentials container */
+    overflow: auto; /* Add overflow handling */
+}
+
+
+.credentials-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff; /* White text color for the login credentials container */
+}
+
+.credentials-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* White text color for labels */
+    text-align: left; /* Align labels to the left */
+}
+
+
+.credentials-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly opaque white background for the text fields */
+    color: #000000; /* Black text color */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+.credentials-container button {
+    background-color: rgba(251, 234, 235, 0.8);
+    color: #2F3C7E;
+    padding: 15px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add margin between the buttons */
+}
+
+.credentials-container button:hover {
+    background-color: rgba(251, 234, 235, 0.9);
+}
+
+
+
+
+.credentials-container p {
+    margin-top: 15px;
+    color: #ffffff; /* White text color for additional text */
+}
+
+.credentials-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.credentials-container a:hover {
+    text-decoration: underline;
+}
+
+#parking-counter {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.parking-space {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid #000;
+    display: inline-block;
+}
+
+.occupied {
+    background-color: #ff6666;
+}
+
+.vacant {
+    background-color: #66cc66;
+}
+.credentials-container .buttons-container a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #2F3C7E;
+     /* White text color for the link */
+    background-color: rgba(251, 234, 235, 0.8);
+    padding: 15px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.credentials-container .buttons-container a:hover {
+    background-color: rgba(251, 234, 235, 0.9);
+}
+/* Add the styles for the slot buttons */
+/* Add the styles for the slot container */
+/* Add the styles for the slot container */
+.slots-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to multiple rows */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    margin-top: 20px;
+    width: 800px; /* Occupy full width of the parent container */
+    overflow-y: auto;
+}
+
+.credentials-container1 {
+    display: flex; /* Enable flexbox for the credentials container */
+    flex-direction: column; /* Arrange child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    justify-content: center; /* Center child elements vertically */
+    width: 90%; /* Occupy 90% of the width of the parent container */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin-top: 20px;
+    padding: 20px 30px; /* Added padding to the right and left edges */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(47, 60, 126, 0.7); /* Transparent dark blue background for the login credentials container */
+    overflow-y: auto; /* Add vertical overflow handling */
+    position: relative; /* Set position to relative */
+    top: 0; /* Adjust top position if needed */
+}
+
+
+.credentials-container1 button {
+    background-color: rgba(251, 234, 235, 0.8);
+    color: #2F3C7E;
+    padding: 50px; /* Increase padding to make buttons bigger */
+    font-size: 24px; /* Increase font size */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px; /* Add margin between buttons */
+    height: 100%; /* Occupy the full height of the credentials container */
+    width: 100%; /* Occupy the full width of the credentials container */
+}
+
+
+.slot-button:hover {
+    background-color: rgba(251, 234, 235, 0.9);
+}
+.slots-container {
+    display: none;
+    justify-content: space-between; /* Distribute slots evenly */
+    align-items: center; /* Center vertically */
+    margin-top: 20px;
+}
+
+.slot-container {
+    flex: 1; /* Allow containers to grow and shrink equally */
+    max-width: 30%; /* Set a maximum width to ensure responsiveness */
+    padding: 20px 30px; /* Added padding to the right and left edges */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(47, 60, 126, 0.7); /* Transparent dark blue background for the slot containers */
+    overflow: auto; /* Add overflow handling */
+    color: #ffffff; /* White text color for the slot containers */
+    margin: 0 5px; /* Add margin between slots */
+}
+#slotsButtons {
+    display: none; /* Hide the slot containers initially */
+}
+
